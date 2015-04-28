@@ -6,7 +6,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = [
-    #url(r'^$', 'reviewchip.views.home', name='home'),
+    url(r'^$', 'reviewchip.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^inquiries/', include('inquiries.urls')),
 ]
