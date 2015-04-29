@@ -8,5 +8,5 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^$', 'reviewchip.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^inquiries/', include('inquiries.urls')),
+    url(r'^inquiries/', include('inquiries.urls', namespace="inquiries")),
 ]
