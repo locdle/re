@@ -11,5 +11,5 @@ class QuestionAdmin(admin.ModelAdmin):
         ('Response',   {'fields':['question_response']}),
     ]
     list_display = ('pub_date', 'rating', 'question_response')
-    list_filter = ['rating']
+    list_filter = ('rating')
 admin.site.register(Question, QuestionAdmin)

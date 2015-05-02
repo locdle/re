@@ -1,7 +1,13 @@
-<h1>{{ starq.starq_text }}</h1>
-<ul>
-{% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }}</li>
-{% endfor %}
-</ul>
+<!--<h1>{{ starq.starq_text }}</h1>-->
 
+<!--{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}-->
+
+<!--<form action="{% url 'inquiries:rate' starq.id %}" method="post">-->
+
+<!--    {% csrf_token %}-->
+<!--        <input type = "radio" name = "starq" id = "starq_id{{ forloop.counter }}" value = "{{starq.id }}" />-->
+<!--        <label for = "starq{{ forloop.counter }}">{{ starq.starq_text }}</label><br />-->
+
+<!--    <input type="submit" value="Rate" />-->
+
+<!--</form>-->
